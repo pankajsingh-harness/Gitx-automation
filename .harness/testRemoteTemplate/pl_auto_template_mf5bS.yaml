@@ -1,0 +1,22 @@
+template:
+  name: pl_auto_template_mf5bS
+  identifier: pl_auto_template_mf5bS
+  versionLabel: v3
+  type: Stage
+  tags: { }
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: step1
+              identifier: step1
+              template:
+                templateRef: account.pl_auto_template_IUe4W
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
