@@ -1,9 +1,0 @@
-overlayInputSet:
-  name: pl_auto_overlayinputset_pvQzZ
-  identifier: overpl_auto_inputset_50UmSMAGUP3
-  orgIdentifier: Simlified_Git_sync
-  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  pipelineIdentifier: pl_auto_pipeline_DOQic
-  inputSetReferences:
-    - pl_auto_inputset_50UmSMAGUP3
-  tags: {}
