@@ -1,9 +1,0 @@
-overlayInputSet:
-  name: pl_auto_inputset_Np40X
-  identifier: pl_auto_inputset_Np40X
-  orgIdentifier: Simlified_Git_sync
-  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  pipelineIdentifier: pl_auto_pipeline_0raiV
-  inputSetReferences:
-    - pl_auto_inputset_e7B3k
-  tags: {}
