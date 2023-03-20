@@ -1,0 +1,25 @@
+template:
+  name: pl_auto_template_mD29R
+  identifier: pl_auto_template_mD29R
+  versionLabel: v3
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: A1
+          identifier: A1
+          template:
+            templateRef: account.pl_auto_template_5UT2N
+            versionLabel: v3
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: stage
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
