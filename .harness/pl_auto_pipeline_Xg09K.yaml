@@ -1,0 +1,16 @@
+pipeline:
+  name: pl_auto_pipeline_Xg09K
+  identifier: pl_auto_pipeline_Xg09K
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: stage1
+        identifier: stage1
+        description: ""
+        type: Pipeline
+        spec:
+          org: Simlified_Git_sync
+          pipeline: pl_auto_pipeline_SkL9N
+          project: SimplifiedGitSync_Do_Not_Delete
