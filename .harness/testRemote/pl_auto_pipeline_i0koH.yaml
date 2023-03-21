@@ -6,10 +6,12 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: stage1
+        name: stage2
         identifier: stage1
         type: Pipeline
         spec:
           org: Simlified_Git_sync
           pipeline: pl_auto_pipeline_3JFRF
           project: SimplifiedGitSync_Do_Not_Delete
+        description: ""
+        tags: {}
