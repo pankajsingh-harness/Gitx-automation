@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: pl_auto_inputset_GyOyd
+  identifier: pl_auto_inputset_GyOyd
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  pipelineIdentifier: pl_auto_pipeline_JQJjL
+  inputSetReferences:
+    - pl_auto_inputset_WKTLm
+  tags: {}
