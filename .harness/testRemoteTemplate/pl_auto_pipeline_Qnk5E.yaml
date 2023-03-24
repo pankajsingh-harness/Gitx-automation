@@ -1,0 +1,23 @@
+pipeline:
+  name: pl_auto_pipeline_Qnk5E
+  identifier: pl_auto_pipeline_Qnk5E
+  template:
+    templateRef: account.pl_auto_template_G5x8j
+    versionLabel: v3
+    templateInputs:
+      stages:
+        - stage:
+            identifier: q1
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: a1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+  tags: { }
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
