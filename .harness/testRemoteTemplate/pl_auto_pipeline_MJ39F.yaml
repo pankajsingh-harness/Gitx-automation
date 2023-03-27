@@ -1,0 +1,24 @@
+pipeline:
+  name: pl_auto_pipeline_MJ39F
+  identifier: pl_auto_pipeline_MJ39F
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: { }
+  stages:
+    - stage:
+        name: x2
+        identifier: x2
+        template:
+          templateRef: account.pl_auto_template_B97Ov
+          versionLabel: v3
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: stage
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
