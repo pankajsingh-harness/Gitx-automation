@@ -1,9 +1,0 @@
-overlayInputSet:
-  name: pl_auto_inputset_yYUp4
-  identifier: pl_auto_inputset_yYUp4
-  orgIdentifier: Simlified_Git_sync
-  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  pipelineIdentifier: pl_auto_pipeline_klpVQ
-  inputSetReferences:
-    - pl_auto_inputset_Ogfj4
-  tags: {}
