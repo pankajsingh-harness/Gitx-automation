@@ -2,7 +2,7 @@ pipeline:
   name: pl_auto_pipeline_IaETe
   identifier: pl_auto_pipeline_IaETe
   template:
-    templateRef: account.pl_auto_template_xUQ2c
+    templateRef: account.pl_auto_template_PAqiU
     versionLabel: v3
     templateInputs:
       stages:
