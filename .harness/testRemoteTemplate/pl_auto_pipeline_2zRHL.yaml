@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: Desc Added
+        description: Desc Added CqsPfV
         type: Approval
         spec:
           execution:
@@ -17,7 +17,7 @@ pipeline:
                   name: t1
                   identifier: t1
                   template:
-                    templateRef: account.pl_auto_template_meJu2
+                    templateRef: account.pl_auto_template_7KSF1
                     versionLabel: v3
                     templateInputs:
                       type: HarnessApproval
