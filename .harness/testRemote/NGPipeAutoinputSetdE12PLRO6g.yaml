@@ -1,0 +1,24 @@
+inputSet:
+  name: NGPipeAutoinputSetdE12PLRO6g
+  identifier: NGPipeAutoinputSetdE12PLRO6g
+  tags: {}
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete   #need to be changed
+  pipeline:
+    identifier: NGPipeAuto2KeLcfH3ul
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: $scripts
+
