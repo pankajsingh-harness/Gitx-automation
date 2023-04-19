@@ -10,10 +10,10 @@ template:
       execution:
         steps:
           - step:
-              name: s2
-              identifier: s2
+              name: s3
+              identifier: s3
               template:
-                templateRef: account.pl_auto_template_3k2PZ
+                templateRef: account.pl_auto_template_vIgSH
                 versionLabel: v3
                 templateInputs:
                   type: HarnessApproval
