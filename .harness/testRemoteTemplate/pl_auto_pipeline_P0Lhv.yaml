@@ -6,10 +6,10 @@ pipeline:
   tags: { }
   stages:
     - stage:
-        name: x2
-        identifier: x2
+        name: x3
+        identifier: x3
         template:
-          templateRef: account.pl_auto_template_PSAmK
+          templateRef: account.pl_auto_template_60fdV
           versionLabel: v3
           templateInputs:
             type: Approval
