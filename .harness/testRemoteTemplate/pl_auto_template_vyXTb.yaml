@@ -1,0 +1,22 @@
+template:
+  name: pl_auto_template_vyXTb
+  identifier: pl_auto_template_vyXTb
+  versionLabel: v3
+  type: Stage
+  tags: { }
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: account.pl_auto_template_Jwoka
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
