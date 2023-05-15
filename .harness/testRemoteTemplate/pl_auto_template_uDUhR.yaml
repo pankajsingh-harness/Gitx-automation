@@ -1,0 +1,22 @@
+template:
+  name: pl_auto_template_uDUhR
+  identifier: pl_auto_template_uDUhR
+  versionLabel: v3
+  type: Stage
+  tags: { }
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: account.pl_auto_template_cHXaY
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
