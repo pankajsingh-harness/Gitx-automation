@@ -20,5 +20,5 @@ inputSet:
                       source:
                         type: Inline
                         spec:
-                          script: echo 'hi'
+                          script: echo 'hi updated'
 
