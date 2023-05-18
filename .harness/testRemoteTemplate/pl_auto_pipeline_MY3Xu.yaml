@@ -1,0 +1,24 @@
+pipeline:
+  name: pl_auto_pipeline_MY3Xu
+  identifier: pl_auto_pipeline_MY3Xu
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: { }
+  stages:
+    - stage:
+        name: x2
+        identifier: x2
+        template:
+          templateRef: account.pl_auto_template_75xhG
+          versionLabel: v3
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: stage
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
