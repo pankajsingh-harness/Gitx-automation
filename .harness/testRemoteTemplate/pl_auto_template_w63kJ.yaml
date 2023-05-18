@@ -9,16 +9,17 @@ template:
       execution:
         steps:
           - step:
-              name: stage
+              name: stage_1
               identifier: stage
               type: HarnessApproval
               timeout: 1d
               spec:
-                approvalMessage: Please review the following information and approve the pipeline progression 
+                approvalMessage: Please review the following information and approve the pipeline progression
                 includePipelineExecutionHistory: true
                 approvers:
                   minimumCount: 1
                   disallowPipelineExecutor: false
                   userGroups: <+input>
-                approverInputs: [ ]
+                approverInputs: []
+                isAutoRejectEnabled: false
   versionLabel: v3
