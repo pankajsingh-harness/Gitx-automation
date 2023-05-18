@@ -9,7 +9,7 @@ template:
       execution:
         steps:
           - step:
-              name: stage_1
+              name: stage_11
               identifier: stage
               type: HarnessApproval
               timeout: 1d
