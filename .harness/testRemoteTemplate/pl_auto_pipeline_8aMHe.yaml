@@ -1,0 +1,27 @@
+pipeline:
+  name: pl_auto_pipeline_8aMHe
+  identifier: pl_auto_pipeline_8aMHe
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: Desc Added
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: t1
+                  identifier: t1
+                  template:
+                    templateRef: account.pl_auto_template_Upv5Z
+                    versionLabel: v3
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
