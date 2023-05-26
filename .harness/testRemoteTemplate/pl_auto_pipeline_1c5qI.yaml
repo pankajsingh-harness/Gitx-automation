@@ -1,0 +1,23 @@
+pipeline:
+  name: pl_auto_pipeline_1c5qI
+  identifier: pl_auto_pipeline_1c5qI
+  template:
+    templateRef: account.pl_auto_template_crcpQ
+    versionLabel: v3
+    templateInputs:
+      stages:
+        - stage:
+            identifier: q1
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: a1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+  tags: { }
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
