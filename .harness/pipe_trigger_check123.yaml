@@ -1,0 +1,30 @@
+pipeline:
+  name: pipe trigger check123
+  identifier: pipe_trigger_check123
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  timeout: 10m
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: "curl -X POST -H 'content-type: application/json' --url 'https://qa.harness.io/gateway/pipeline/api/webhook/custom/YI99TkXuRuy94Jqm53UKpA/v3?accountIdentifier=6dPIY0B4S96mB_ivo57p9Q&orgIdentifier=default&projectIdentifier=AmitTest&pipelineIdentifier=github_test&triggerIdentifier=custom1' -d '{\"sample_key\": \"sample_value\"}'"
+                    environmentVariables: []
+                    outputVariables: []
+        tags: {}
