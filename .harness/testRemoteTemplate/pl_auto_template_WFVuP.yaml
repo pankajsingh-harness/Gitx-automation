@@ -1,0 +1,24 @@
+template:
+  name: pl_auto_template_WFVuP
+  identifier: pl_auto_template_WFVuP
+  type: Stage
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: stage
+              identifier: stage
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: Please review the following information and approve the pipeline progression 
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                approverInputs: [ ]
+  versionLabel: v3
