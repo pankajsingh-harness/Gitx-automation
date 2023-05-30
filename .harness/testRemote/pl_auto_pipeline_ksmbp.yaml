@@ -3,28 +3,28 @@ pipeline:
   identifier: pl_auto_pipeline_ksmbp
   projectIdentifier: CDCNGAuto_TriggerProj3t5GO7QFbO
   orgIdentifier: CDCNGAuto_TriggerOrgAutoHHx2LutWeM
-  tags: { }
+  tags: {}
   stages:
-      - stage:
-          name: s1
-          identifier: s1
-          description: ""
-          type: Custom
-          spec:
-            execution:
-              steps:
-                - step:
-                    type: ShellScript
-                    name: Shell Script_1
-                    identifier: ShellScript_1
-                    spec:
-                      shell: Bash
-                      onDelegate: true
-                      source:
-                        type: Inline
-                        spec:
-                          script: <+input>
-                      environmentVariables: [ ]
-                      outputVariables: [ ]
-                    timeout: 1m
-          tags: { }
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo 'hi'
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 1m
+        tags: {}
