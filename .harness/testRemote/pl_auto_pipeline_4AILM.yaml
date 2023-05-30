@@ -1,0 +1,28 @@
+pipeline:
+  name: pl_auto_pipeline_4AILM
+  identifier: pl_auto_pipeline_4AILM
+  projectIdentifier: CDCNGAuto_TriggerProjsX45AsU7Np
+  orgIdentifier: CDCNGAuto_TriggerOrgAuto7rpF8jLz4J
+  tags: { }
+  stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Http
+                    name: Http_1
+                    identifier: Http_1
+                    timeout: 10s
+                    spec:
+                      url: https://qa.harness.io/gateway/pipeline/api/webhook/custom/vG46t-L1R3-ghDsKHLLFVw/v3?accountIdentifier=rXUXvbFqRr2XwcjBu3Oq-Q&orgIdentifier=CDCNGAuto_TriggerOrgAuto7rpF8jLz4J&projectIdentifier=CDCNGAuto_TriggerProjsX45AsU7Np&pipelineIdentifier=pl_auto_pipeline_Q5xg1&triggerIdentifier=CDCNGAuto_Custom_Webhook_Trigger_xzoSWJFwCZ
+                      method: POST
+                      headers: [ ]
+                      inputVariables: [ ]
+                      outputVariables: [ ]
+                      requestBody: "{\"sample_key\": \"sample_value\"}"
+          tags: { }
