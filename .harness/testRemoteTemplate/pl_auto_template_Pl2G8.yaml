@@ -1,0 +1,28 @@
+template:
+  name: pl_auto_template_Pl2G8
+  identifier: pl_auto_template_Pl2G8
+  versionLabel: v3
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: A1
+          identifier: A1
+          description: ""
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    name: A2
+                    identifier: A2
+                    template:
+                      templateRef: account.pl_auto_template_DcgVc
+                      versionLabel: v3
+                      templateInputs:
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
+          tags: {}
