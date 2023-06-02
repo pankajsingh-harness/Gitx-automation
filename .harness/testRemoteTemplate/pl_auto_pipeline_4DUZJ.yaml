@@ -6,8 +6,8 @@ pipeline:
   tags: { }
   stages:
     - stage:
-        name: x2
-        identifier: x2
+        name: x3
+        identifier: x3
         template:
           templateRef: account.pl_auto_template_eifdG
           versionLabel: v3
