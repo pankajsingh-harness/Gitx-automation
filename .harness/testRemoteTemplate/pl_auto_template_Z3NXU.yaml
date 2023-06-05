@@ -1,0 +1,25 @@
+template:
+  name: pl_auto_template_Z3NXU
+  identifier: pl_auto_template_Z3NXU
+  versionLabel: v3
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s2
+          identifier: s2
+          template:
+            templateRef: account.pl_auto_template_hgkIu
+            versionLabel: v3
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: stage
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
