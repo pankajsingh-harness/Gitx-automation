@@ -1,0 +1,17 @@
+template:
+  name: pl_auto_template_8pRhF
+  identifier: pl_auto_template_8pRhF
+  versionLabel: v3
+  type: Step
+  tags: {}
+  spec:
+    type: HarnessApproval
+    timeout: 1d
+    spec:
+      approvalMessage: Please review the following information and approve the pipeline progression 
+      includePipelineExecutionHistory: true
+      approvers:
+        userGroups: <+input>
+        minimumCount: 1
+        disallowPipelineExecutor: false
+      approverInputs: []
