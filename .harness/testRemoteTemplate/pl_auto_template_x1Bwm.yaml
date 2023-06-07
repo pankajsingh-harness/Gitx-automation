@@ -1,0 +1,30 @@
+template:
+  name: pl_auto_template_x1Bwm
+  identifier: pl_auto_template_x1Bwm
+  versionLabel: v3
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: q1
+          identifier: q1
+          description: ""
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    name: a1
+                    identifier: a1
+                    type: HarnessApproval
+                    timeout: 1d
+                    spec:
+                      approvalMessage: Please review the following information and approve the pipeline progression 
+                      includePipelineExecutionHistory: true
+                      approvers:
+                        minimumCount: 1
+                        disallowPipelineExecutor: false
+                        userGroups: <+input>
+                      approverInputs: []
+          tags: {}
