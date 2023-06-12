@@ -1,0 +1,30 @@
+pipeline:
+  name: pl_auto_pipeline_quycZ
+  identifier: pl_auto_pipeline_quycZ
+  projectIdentifier: CDCNGAuto_bitbucketTrigger_bawMK7uK2p
+  orgIdentifier: DoNotDeleteTriggerOrg
+  tags: { }
+  stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: Shell Script_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      onDelegate: true
+                      source:
+                        type: Inline
+                        spec:
+                          script: <+input>
+                      environmentVariables: [ ]
+                      outputVariables: [ ]
+                    timeout: 1m
+          tags: { }
