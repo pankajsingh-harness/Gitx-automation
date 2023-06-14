@@ -23,8 +23,14 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: exit 0
+                        script: echo <+stage.variables>
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
         tags: {}
+        variables:
+          - name: v1
+            type: String
+            description: ""
+            required: false
+            value: archit
